@@ -1,0 +1,17 @@
+<ng-template [ngIf]="arrOfHobbies.length > 0">
+  <h1>Список хобі:</h1>
+  <ul>
+    <li *ngFor="let hobby of arrOfHobbies">
+      <div class="main-container">
+        <b>{{ hobby.name }}</b>
+        <br>
+        <p>{{ hobby.text }}</p>
+        <br>
+        <div class="imgs-container">
+          <img [src]="hobby.essence_img" alt="hobby essence">
+          <img [src]="hobby.fam_img" alt="famous hobbyist">
+        </div>
+      </div>
+    </li>
+  </ul>
+</ng-template>

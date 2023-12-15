@@ -1,0 +1,37 @@
+.main-container{
+  background: #eea3a3;
+  border: 2px solid #1c1b1b;
+  box-shadow: 14px 10px 17px 0 rgba(0,0,0,0.75);
+  border-radius: 5px;
+  margin: 0 0 15px 0;
+  width: 50%;
+  padding: 25px;
+}
+
+h1{
+  color: navy;
+}
+
+p{
+color: #1c1b1b;
+font-size: 30px;
+}
+
+b{
+  color: #1c1b1b;
+  font-size: 30px;
+}
+
+img{
+  height: 200px;
+  width: auto;
+  box-shadow: 14px 10px 17px 0px rgba(0,0,0,0.75);
+  border: 2px solid #4481cb;
+}
+
+.imgs-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+
