@@ -1,4 +1,22 @@
-<ng-template [ngIf]="arrOfHobbies.length > 0">
+<ng-template [ngIf]="arrOfHobbiesImgPart.length > 0 && arrOfHobbiesTextPart.length > 0">
+  <h1>Список хобі:</h1>
+  <ul>
+    <li *ngFor="let text of arrOfHobbiesTextPart; let ind = index">
+      <div class="main-container">
+        <b>{{ text.name }}</b>
+        <br>
+        <p>{{ text.text }}</p>
+        <br>
+        <div class="imgs-container">
+          <img [src]="arrOfHobbiesImgPart[ind].essence_img" alt="hobby essence">
+          <img [src]="arrOfHobbiesImgPart[ind].fam_img" alt="famous hobbyist">
+        </div>
+      </div>
+    </li>
+  </ul>
+</ng-template>
+
+<!-- <ng-template [ngIf]="arrOfHobbies.length > 0">
   <h1>Список хобі:</h1>
   <ul>
     <li *ngFor="let hobby of arrOfHobbies">
@@ -14,4 +32,4 @@
       </div>
     </li>
   </ul>
-</ng-template>
+</ng-template> -->
